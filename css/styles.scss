@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+ background-color: grey;
+}
+
+.contenedor {
+  display: flex;
+  min-width: 640px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor--banderas {
+  display: flex;
+  flex-wrap: wrap;
+  width: 640px;
+  height: 460px;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+
+.sprite {
+  width: 200px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-image: url("../img/sprite-banderas.png");
+}
+
+$ol-banderas: (
+  ar: 0px 0px, 
+  bo: -200px 0px, 
+  br: -400px 0px,
+  cl: 0px -140px,
+  co: -200px -140px,
+  ec: -400px -140px,
+  pe: 0px -280px,
+  uy: -200px -280px,
+  ve: -400px -280px
+  );
+
+$ul-banderas: (
+  ar: -200px 0px, 
+  bo: -400px 0px, 
+  br: 0px 0px,
+  cl: -200px -140px,
+  co: -400px -140px,
+  ec: 0px -140px,
+  pe: -200px -280px,
+  uy: -400px -280px,
+  ve: 0px -280px
+  );
+
+@each $id, $position in ($ol-banderas){
+  .bandera--#{$id} {
+    background-position: $position;
+  }
+}
+
+@each $id, $position in ($ul-banderas){
+  .bandera--#{$id}:hover {
+    background-position: $position;
+  }
+}
+

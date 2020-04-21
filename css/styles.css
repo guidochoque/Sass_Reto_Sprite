@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: grey;
+}
+
+.contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 640px;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor--banderas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 640px;
+  height: 460px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+}
+
+.sprite {
+  width: 200px;
+  height: 140px;
+  background-repeat: no-repeat;
+  background-image: url("../img/sprite-banderas.png");
+}
+
+.bandera--ar {
+  background-position: 0px 0px;
+}
+
+.bandera--bo {
+  background-position: -200px 0px;
+}
+
+.bandera--br {
+  background-position: -400px 0px;
+}
+
+.bandera--cl {
+  background-position: 0px -140px;
+}
+
+.bandera--co {
+  background-position: -200px -140px;
+}
+
+.bandera--ec {
+  background-position: -400px -140px;
+}
+
+.bandera--pe {
+  background-position: 0px -280px;
+}
+
+.bandera--uy {
+  background-position: -200px -280px;
+}
+
+.bandera--ve {
+  background-position: -400px -280px;
+}
+
+.bandera--ar:hover {
+  background-position: -200px 0px;
+}
+
+.bandera--bo:hover {
+  background-position: -400px 0px;
+}
+
+.bandera--br:hover {
+  background-position: 0px 0px;
+}
+
+.bandera--cl:hover {
+  background-position: -200px -140px;
+}
+
+.bandera--co:hover {
+  background-position: -400px -140px;
+}
+
+.bandera--ec:hover {
+  background-position: 0px -140px;
+}
+
+.bandera--pe:hover {
+  background-position: -200px -280px;
+}
+
+.bandera--uy:hover {
+  background-position: -400px -280px;
+}
+
+.bandera--ve:hover {
+  background-position: 0px -280px;
+}
+/*# sourceMappingURL=styles.css.map */
